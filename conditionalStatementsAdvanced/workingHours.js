@@ -1,0 +1,21 @@
+function workingHours (hour, weekday) {
+    switch (weekday) {
+        case `Monday`:
+        case `Tuesday`:
+        case `Wednesday`:
+        case `Thursday`: 
+        case `Friday`:
+        case `Saturday`:  
+            if (hour >= 10 && hour <= 18)  {
+                console.log(`open`);
+            } else {
+                console.log(`closed`);
+            }
+            break;
+        case `Sunday`:
+            console.log(`closed`);
+            break; 
+    }
+}
+
+workingHours (19, `Friday`)
